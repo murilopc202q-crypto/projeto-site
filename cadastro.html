@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div  class="card-cadastro">
+        <article class="cadastro">
+           <h1>Cadastro</h1>
+
+                
+                  <form class="form-cadastro" action="/index.html/pages/login.html" method="get"> 
+
+                    <div class="grupo-input">
+                      <label for="nome-cadastro">NOME: </label>
+                       <input type="text"  id="nome"  name="nome" required>
+                    </div>
+
+                    <div class="grupo-input">
+                      <label for="senha-cadastro">SENHA: </label>
+                       <input type="password"  id="password"  name="password" required>                       
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="email-cadastro">E-mail: </label>
+                        <input type="email" name="email" id="email" required autocomplete="email">
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="telefone">Telefone: </label>
+                        <input type="number" name="number" id="number" required>                        
+                    </div>
+                   <button class="button-cadastro" type="submit">Criar</button>
+                  </form>
+        </article>
+    </div>
+    
+</body>
+</html>
