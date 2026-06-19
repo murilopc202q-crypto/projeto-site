@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login de conta</title>  <link rel="stylesheet" href="/css/style.css"> 
+    <title>login de conta</title>  
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body class="body-login">
 
     <div  class="card-login">
         <article class="login">
            <h1>Login</h1>
                           
-                  <form class="form-login" action="/index.html/pages/cardapio.html" method="get"> 
+                  <form class="form-login" action="cardapio.html" method="get"> 
 
                     <div class="grupo-input">
                       <label for="nome-login">NOME:</label>
-                       <input type="text"  id="nome"  name="nome" required>
+                       <input type="text"  id="nome"  name="nome" >
                     </div>
 
                     <div class="grupo-input">
                       <label for="senha-login">SENHA:</label>
-                        <input type="password"  id="password"  name="password" required>
+                        <input type="password"  id="password"  name="password" >
                        <button class="button-login" type="submit">Acessar</button>
                     </div>
                     
                     <div>
                        <p> Não tenho uma conta:</p>
-                       <button class=" button-cadastro"> <a href="/index.html/pages/cadastro.html">Cadastre-se</a></button>
+                       <button class=" button-cadastro"> <a href="cadastro.html">Cadastre-se</a></button>
                     </div>
                   </form>
         </article>

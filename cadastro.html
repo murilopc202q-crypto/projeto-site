@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>  <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="Página de cadastro de novo usuário">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div  class="card-cadastro">
+    <main class="card-cadastro">
         <article class="cadastro">
-           <h1>Cadastro</h1>
+            <h1>Cadastro</h1>
+            <p class="cadastro-text">Preencha seus dados para criar uma conta.</p>
 
-                
-                  <form class="form-cadastro" action="/index.html/pages/login.html" method="get"> 
+            <form class="form-cadastro" action="login.html" method="get">
+                <div class="grupo-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                </div>
 
-                    <div class="grupo-input">
-                      <label for="nome-cadastro">NOME: </label>
-                       <input type="text"  id="nome"  name="nome" required>
-                    </div>
+                <div class="grupo-input">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@exemplo.com">
+                </div>
 
-                    <div class="grupo-input">
-                      <label for="senha-cadastro">SENHA: </label>
-                       <input type="password"  id="password"  name="password" required>                       
-                    </div>
+                <div class="grupo-input">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+                </div>
 
-                    <div class="grupo-input">
-                        <label for="email-cadastro">E-mail: </label>
-                        <input type="email" name="email" id="email" required autocomplete="email">
-                    </div>
+                <div class="grupo-input">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password"  minlength="6" placeholder="Mínimo 6 caracteres">
+                </div>
 
-                    <div class="grupo-input">
-                        <label for="telefone">Telefone: </label>
-                        <input type="number" name="number" id="number" required>                        
-                    </div>
-                   <button class="button-cadastro" type="submit">Criar</button>
-                  </form>
+                <div class="grupo-input">
+                    <label for="confirm-password">Confirmar senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password"  minlength="6" placeholder="Repita a senha">
+                </div>
+
+                <button class="button-cadastro" type="submit">Criar conta</button>
+            </form>
+            <p class="cadastro-note">Já tem conta? <a href="login.html">Faça login</a>.</p>
         </article>
-    </div>
-    
+    </main>
+
 </body>
 </html>
