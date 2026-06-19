@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 /*  Estilização - cardápio */
 
 .topo {
@@ -170,11 +179,14 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #f9f4ea 0%, #f2e8d3 100%);
+  background-image: url("imagem_fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #111;
   min-height: 100vh;
 }
-
 .card-cadastro {
   display: flex;
   justify-content: center;
@@ -247,7 +259,6 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
 
 .cadastro-note {
   margin-top: 1.25rem;
